@@ -1,6 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import * as styled from "styled-components";
+
+const StyledDiv = styled.div`
+  animation-delay: ${({ index }) => `${index * 0.5}s`};
+`;
 
 function App() {
   return (
